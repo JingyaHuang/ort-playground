@@ -50,3 +50,7 @@ Exported ONNX files:
 ```
 
 # Inference with ONNXRuntime
+
+```
+python inference.py
+```
