@@ -31,6 +31,8 @@ optimization_config = optimization_config = OptimizationConfig(
     use_multi_head_attention=True,  # atol: 1e-05
     enable_gemm_fast_gelu_fusion=False,  # atol: 1e-05, not compatible with enable_gelu_approximation
     disable_rotary_embeddings=False,  # atol: 1e-05
+    use_raw_attention_mask=True,
+    # no_attention_mask=True,
 )
 optimizer = ORTOptimizer.from_pretrained(save_dir)
 opt_save_dir = "bge_onnx_opt"
